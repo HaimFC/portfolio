@@ -807,3 +807,83 @@ main > .introduction > .container > .right-col > .img-cont img {
     }
 }
 
+
+@media (max-width: 768px) {
+  main > .contact > .container > .row2-contact > .left-col > form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main > .contact > .container > .row2-contact > .left-col > form > label {
+    margin: 0 0 0.5rem 0;
+  }
+
+  main > .contact > .container > .row2-contact > .left-col > form > input,
+  main > .contact > .container > .row2-contact > .left-col > form > textarea {
+    border: 2px solid #E8EDF2;
+    margin: 0 0 1rem 0;
+    padding: 0.75rem 0;
+  }
+
+  main > .contact > .container > .row2-contact > .left-col > form > textarea {
+    padding-bottom: 6rem;
+  }
+
+  main > .contact > .container > .row2-contact > .left-col > form > button {
+    margin: 1rem 0 1rem 0;
+    width: 100%;
+    background-color: #2663EE;
+    stroke: #0D50F3;
+    color: #A7BFF1;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+  }
+
+  main > .contact > .container > .row2-contact > .left-col > form > button:hover {
+    background-color: #074df0;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  main > .contact > .container > .row2-contact > .left-col > form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main > .contact > .container > .row2-contact > .left-col > form > label {
+    margin: 0 0 0.5rem 0;
+  }
+
+  main > .contact > .container > .row2-contact > .left-col > form > input,
+  main > .contact > .container > .row2-contact > .left-col > form > textarea {
+    border: 2px solid #E8EDF2;
+    margin: 0 0 1rem 0;
+    padding: 0.75rem 0;
+  }
+
+  main > .contact > .container > .row2-contact > .left-col > form > textarea {
+    padding-bottom: 6rem;
+  }
+
+  main > .contact > .container > .row2-contact > .left-col > form > button {
+    margin: 1rem 0 1rem 0;
+    width: 25%;
+    background-color: #2663EE;
+    stroke: #0D50F3;
+    color: #A7BFF1;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+  }
+
+  main > .contact > .container > .row2-contact > .left-col > form > button:hover {
+    background-color: #074df0;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}

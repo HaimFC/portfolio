@@ -1,184 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="script.js"></script>
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class = "main-container" id="Main">
-       <header class="main-row">
-            <a href="#Main"><h3>Haim Fellner Cohen</h3></a>
+  <div class="main-container" id="Main">
+    <header class="main-row">
+      <a href="#Main"><h3>Haim Fellner Cohen</h3></a>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <svg
+          class="menu-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
 
-            <nav id="mobileMenu">
-                <ul>
-                    <li><a href="#Introduction">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+      <nav id="mobileMenu">
+        <ul>
+          <li><a href="#Introduction">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <main class = "main-row">
-            <div class = "introduction row" id="Introduction">
-                <div class = "container">
-                    <div class = "left-col">
-                        <h1>Full-Stack Developer</h1>
-                        <p class = "intro-par">I create beautiful and functional web experiences using modern
-                            technologies. Passionate about clean code and user-centered
-                            design.</p>
-                        <a href="#Contact"><button>Get In Touch</button></a>
-                    </div>
-                    <div class = "right-col">
-                        <div class = "img-cont">
-                            <img src="Profile.JPG" alt="">
-                        </div>
-                    </div>
+    <main class="main-row">
+      <!-- Introduction -->
+      <div class="introduction row" id="Introduction">
+        <div class="container">
+          <div class="left-col">
+            <h1>Full-Stack Developer</h1>
+            <p class="intro-par">
+              I create beautiful and functional web experiences using modern
+              technologies. Passionate about clean code and user-centered
+              design.
+            </p>
+            <a href="#Contact"><button>Get In Touch</button></a>
+          </div>
+          <div class="right-col">
+            <div class="img-cont">
+              <img src="Profile.JPG" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="About row" id="About">
+        <div class="container">
+          <div class="left-col">
+            <h2>About Me</h2>
+            <p class="about-par">
+              I'm a passionate full-stack developer with a keen eye for design
+              and a love for creating seamless user experiences. With expertise
+              in HTML, CSS, and JavaScript, I bring ideas to life through clean,
+              efficient code. When I'm not coding, you can find me exploring new
+              technologies, reading design blogs, or enjoying a good cup of
+              coffee while sketching out new project ideas.
+            </p>
+          </div>
+          <div class="right-col">
+            <h3>Skills</h3>
+            <div class="skills">
+              <div class="skill-row">
+                <span>Python</span>
+                <div class="skill-bar">
+                  <div class="skill-progress python"></div>
                 </div>
-            </div>
-
-            <div class = "About row" id = "About">
-                <div class = "container">
-                    <div class = "left-col">
-                        <h2>About Me</h2>
-                        <p class = "about-par">I'm a passionate full-stack developer with a keen eye for design and a love for creating
-                            seamless user experiences. With expertise in HTML, CSS, and JavaScript, I bring ideas to
-                            life through clean, eficient code. When I'm not coding, you can find me exploring new
-                            technologies, reading design blogs, or enjoying a good cup of coffee while sketching out
-                            new project ideas.</p>
-                    </div>
-                    <div class="right-col">
-                        <h3>Skills</h3>
-                        <div class="skills">
-                            <div class="skill-row">
-                                <span>Python</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress python"></div>
-                                </div>
-                            </div>
-                            <div class="skill-row">
-                                <span>JavaScript</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress js"></div>
-                                </div>
-                            </div>
-                            <div class="skill-row">
-                                <span>C/C++</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress c"></div>
-                                </div>
-                            </div>
-                            <div class="skill-row">
-                                <span>Erlang</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress erlang"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="skill-row">
+                <span>JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress js"></div>
                 </div>
-            </div>
-
-            <div class = "my-projects row" id = "Projects">
-                <h2>My Projects</h2>
-                <div class = "cards container">
-                    <div class = "card card1">
-                        <div class = "img-cont"><img src="TSSCI.PNG" alt=""></div>
-                        <div class = "white-frame">
-                            <h4>TSSCI - Pain Classify</h4>
-                            <p class = "project-info">Visual analysis project that uses skeletal facial keypoints to detect and represent expressions of pain. It encodes motion over time into colored pixel strips, enabling clear visual tracking of facial dynamics.</p>
-                            <a href="https://github.com/HaimFC/TSSCI_Project?tab=readme-ov-file" target="_blank"><button>View Project</button></a>   
-                        </div>
-                    </div>
-                    <div class = "card card2">
-                        <div class = "img-cont"><img src="ErlangMap Reduce.png" alt=""></div>
-                        <div class = "white-frame">
-                            <h4>Erlang - MapReduce</h4>
-                            <p class = "project-info">Distributed data-processing project that analyzes IMDb datasets using the MapReduce framework. It extracts insights such as top-rated movies, actor collaborations, and network connections in a scalable and efficient way.</p>
-                            <a href="https://github.com/HaimFC/ImdbMapReduce" target="_blank"><button>View Project</button></a>   
-                        </div>
-                    </div>
-                    <div class = "card card3">
-                        <div class = "img-cont"><img src="Radio.png" alt=""></div>
-                        <div class = "white-frame">
-                            <h4>Radio - C/C++</h4>
-                            <p class = "project-info">Internet-Radio-App is a C/C++ project that streams audio to multiple clients using sockets and multithreading. It showcases skills in network programming, concurrent processing, and real-time data handling.</p>
-                            <a href="https://github.com/HaimFC/Internet-Radio-App-multithreading-and-sockets" target="_blank"><button>View Project</button></a>   
-                        </div>
-
-                    </div>
-                </div> 
-            </div>
-
-            <div class = "contact row" id = "Contact">
-                <div class = "container">
-                    <h2 class = "row1-contact">Get In Touch</h2>
-                    <div class = "row2-contact">
-                        <div class = "left-col">
-                            <label for="">Name</label>
-                            <input type="text">
-
-                            <label for="">Email</label>
-                            <input type="email">
-
-                            <label for="">Message</label>
-                            <textarea id="message" name="message"></textarea>
-
-
-                            <button type="submit">Send Message</button>
-                        </div>
-                        <div class = "right-col">
-                            <h3>Contact Information</h3>
-                            <!-- remember to add icons -->
-                            <div class="link email">
-                            <a href="mailto:haimfellner1@gmail.com">
-                                <p>📧 haimfellner1@gmail.com</p>
-                            </a>
-                            </div>
-
-                            <div class="link phone">
-                            <a href="tel:+972548310993">
-                                <p>📞 +972 (054) 831-0993</p>
-                            </a>
-                            </div>
-
-                            <div class="link map">
-                            <a href="https://www.google.com/maps/place/Beer+Sheva,+Israel" target="_blank">
-                                <p>📍 Beer Sheva, Israel</p>
-                            </a>
-                            </div>
-                            <div class="social-icons">
-                                <a href="https://www.linkedin.com/in/haimfellnercohen/" class="icon linkedin" target="_blank">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="https://github.com/HaimFC" class="icon github" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://www.instagram.com/haim_fc/" class="icon instagram" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="skill-row">
+                <span>C/C++</span>
+                <div class="skill-bar">
+                  <div class="skill-progress c"></div>
                 </div>
+              </div>
+              <div class="skill-row">
+                <span>Erlang</span>
+                <div class="skill-bar">
+                  <div class="skill-progress erlang"></div>
+                </div>
+              </div>
             </div>
-        </main>
-    </div>
-    <footer class = "main-row">
-        <p>© 2025 Haim Fellner Cohen. All rights reserved</p>
-    </footer>
-    
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="my-projects row" id="Projects">
+        <h2>My Projects</h2>
+        <div class="cards container">
+          <div class="card card1">
+            <div class="img-cont">
+              <img src="TSSCI.PNG" alt="" />
+            </div>
+            <div class="white-frame">
+              <h4>TSSCI - Pain Classify</h4>
+              <p class="project-info">
+                Visual analysis project that uses skeletal facial keypoints to
+                detect and represent expressions of pain. It encodes motion over
+                time into colored pixel strips, enabling clear visual tracking
+                of facial dynamics.
+              </p>
+              <a
+                href="https://github.com/HaimFC/TSSCI_Project?tab=readme-ov-file"
+                target="_blank"
+                ><button>View Project</button></a
+              >
+            </div>
+          </div>
+          <div class="card card2">
+            <div class="img-cont">
+              <img src="ErlangMap Reduce.png" alt="" />
+            </div>
+            <div class="white-frame">
+              <h4>Erlang - MapReduce</h4>
+              <p class="project-info">
+                Distributed data-processing project that analyzes IMDb datasets
+                using the MapReduce framework. It extracts insights such as
+                top-rated movies, actor collaborations, and network connections
+                in a scalable and efficient way.
+              </p>
+              <a
+                href="https://github.com/HaimFC/ImdbMapReduce"
+                target="_blank"
+                ><button>View Project</button></a
+              >
+            </div>
+          </div>
+          <div class="card card3">
+            <div class="img-cont">
+              <img src="Radio.png" alt="" />
+            </div>
+            <div class="white-frame">
+              <h4>Radio - C/C++</h4>
+              <p class="project-info">
+                Internet-Radio-App is a C/C++ project that streams audio to
+                multiple clients using sockets and multithreading. It showcases
+                skills in network programming, concurrent processing, and
+                real-time data handling.
+              </p>
+              <a
+                href="https://github.com/HaimFC/Internet-Radio-App-multithreading-and-sockets"
+                target="_blank"
+                ><button>View Project</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="contact row" id="Contact">
+        <div class="container">
+          <h2 class="row1-contact">Get In Touch</h2>
+          <div class="row2-contact">
+            <div class="left-col">
+              <form id="contactForm" novalidate>
+                <label for="name">Name</label>
+                <input id="name" name="from_name" type="text" required />
+
+                <label for="email">Email</label>
+                <input id="email" name="from_email" type="email" required />
+
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                ></textarea>
+
+                <!-- Honeypot -->
+                <input
+                  type="text"
+                  name="company"
+                  style="display:none"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+
+                <button id="sendBtn" type="submit">Send Message</button>
+                <p id="formStatus" aria-live="polite"></p>
+              </form>
+            </div>
+            <div class="right-col">
+              <h3>Contact Information</h3>
+              <div class="link email">
+                <a href="mailto:haimfellner1@gmail.com">
+                  <p>📧 haimfellner1@gmail.com</p>
+                </a>
+              </div>
+              <div class="link phone">
+                <a href="tel:+972548310993">
+                  <p>📞 +972 (054) 831-0993</p>
+                </a>
+              </div>
+              <div class="link map">
+                <a
+                  href="https://www.google.com/maps/place/Beer+Sheva,+Israel"
+                  target="_blank"
+                >
+                  <p>📍 Beer Sheva, Israel</p>
+                </a>
+              </div>
+              <div class="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/haimfellnercohen/"
+                  class="icon linkedin"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/HaimFC"
+                  class="icon github"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/haim_fc/"
+                  class="icon instagram"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="main-row">
+    <p>© 2025 Haim Fellner Cohen. All rights reserved</p>
+  </footer>
 </body>
 </html>
