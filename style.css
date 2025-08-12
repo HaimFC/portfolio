@@ -375,8 +375,8 @@ main > .introduction > .container > .right-col > .img-cont img {
     }
 
     .skill-progress.python  { width: 90%; }
-    .skill-progress.js      { width: 50%; }
-    .skill-progress.c       { width: 80%; }
+    .skill-progress.js      { width: 87%; }
+    .skill-progress.c       { width: 85%; }
     .skill-progress.erlang  { width: 85%; }
 
     .cards {
