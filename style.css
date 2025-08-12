@@ -374,10 +374,10 @@ main > .introduction > .container > .right-col > .img-cont img {
         transition: width 0.5s ease-in-out;
     }
 
-    .skill-progress.python  { width: 90%; }
-    .skill-progress.js      { width: 87%; }
-    .skill-progress.c       { width: 85%; }
-    .skill-progress.erlang  { width: 85%; }
+    .skill-progress.python  { width: 92%; }
+    .skill-progress.js      { width: 85%; }
+    .skill-progress.c       { width: 80%; }
+    .skill-progress.erlang  { width: 80%; }
 
     .cards {
         width: 100%;
@@ -668,10 +668,10 @@ main > .introduction > .container > .right-col > .img-cont img {
         transition: width 0.5s ease-in-out;
     }
 
-    .skill-progress.python  { width: 90%; }
-    .skill-progress.js      { width: 50%; }
+    .skill-progress.python  { width: 92%; }
+    .skill-progress.js      { width: 85%; }
     .skill-progress.c       { width: 80%; }
-    .skill-progress.erlang  { width: 85%; }
+    .skill-progress.erlang  { width: 80%; }
 
     .cards {
         width: 100%;
